@@ -9,9 +9,9 @@ namespace ProgramacaoVisual.Controllers
 
         public static IList<Pessoa> pessoaList = new List<Pessoa>
         {
-            new Pessoa { Id = 1, Nome = "Kaue"},
-            new Pessoa { Id = 2, Nome = "Joao"}, 
-            new Pessoa { Id = 3, Nome = "pedr"}
+            new Pessoa { Id = 1, Nome = "Kaue", Cargo="Cargo2"},
+            new Pessoa { Id = 2, Nome = "Joao" , Cargo="Cargo1"}, 
+            new Pessoa { Id = 3, Nome = "pedr", Cargo="cargo2"}
         };
 
         public IActionResult Index()
@@ -23,6 +23,12 @@ namespace ProgramacaoVisual.Controllers
             };
 
             return View(viewModel);
+            
+        }
+
+        public IActionResult Create()
+        {
+            return View();
             
         }
     }
