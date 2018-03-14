@@ -39,8 +39,7 @@ namespace ProgramacaoVisual.Controllers
             if(!ModelState.IsValid)
                 return View(newPessoa);
 
-            newPessoa.Id = pessoaList.Max(p => p.id) + 1;
-            pessoaList.Add(newPessoa);
+       
             return RedirectToAction(nameof(Index));
         }
     }
