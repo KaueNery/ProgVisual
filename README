@@ -1,0 +1,6 @@
+#create a repository (github)
+#inside the created repository, init an empty git repository (git init)
+#git clone https://..... (clone the repository)
+
+#$:dotnet build for compiling the project
+#$:dotnet run for starting the application
